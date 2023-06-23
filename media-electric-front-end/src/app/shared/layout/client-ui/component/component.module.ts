@@ -5,11 +5,14 @@ import { PaginationComponent } from './pagination/pagination.component';
 
 
 @NgModule({
-  declarations: [
-    PaginationComponent
-  ],
-  imports: [
-    CommonModule
-  ]
+    declarations: [
+        PaginationComponent
+    ],
+    exports: [
+        PaginationComponent
+    ],
+    imports: [
+        CommonModule
+    ]
 })
 export class ComponentModule { }

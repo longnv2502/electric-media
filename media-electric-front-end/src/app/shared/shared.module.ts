@@ -3,6 +3,7 @@ import {RouterModule} from "@angular/router";
 import {NgModule} from "@angular/core";
 import {CommonModule} from "@angular/common";
 import {LayoutModule} from "./layout/layout.module";
+import {ClientUiModule} from "./layout/client-ui/client-ui.module";
 
 @NgModule({
   imports: [
@@ -11,6 +12,7 @@ import {LayoutModule} from "./layout/layout.module";
     FormsModule,
     ReactiveFormsModule,
     LayoutModule,
+    ClientUiModule,
   ],
   declarations: [
   ],
@@ -22,6 +24,7 @@ import {LayoutModule} from "./layout/layout.module";
     FormsModule,
     ReactiveFormsModule,
     LayoutModule,
+    ClientUiModule,
   ],
   schemas: []
 

@@ -5,6 +5,6 @@ import { Component } from '@angular/core';
   templateUrl: './new-list-big.component.html',
   styleUrls: ['./new-list-big.component.scss']
 })
-export class NewsListBigComponent {
+export class NewspaperListComponent {
 
 }

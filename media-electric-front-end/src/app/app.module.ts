@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {NgxWebstorageModule} from "ngx-webstorage";
 import {AppConfig} from "./shared";
+import { LatestNewsComponent } from './latest-news/latest-news.component';
 
 const appConfigLoader = (appConfig: AppConfig) => {
   return () => {
@@ -14,7 +15,8 @@ const appConfigLoader = (appConfig: AppConfig) => {
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LatestNewsComponent,
   ],
   imports: [
     BrowserModule,
