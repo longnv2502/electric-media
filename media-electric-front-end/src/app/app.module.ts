@@ -5,7 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {NgxWebstorageModule} from "ngx-webstorage";
 import {AppConfig} from "./shared";
-import { LatestNewsComponent } from './latest-news/latest-news.component';
+import {HttpClientModule} from "@angular/common/http";
+import {ClientModule} from "./client/client.module";
+import {SharedModule} from "./shared/shared.module";
 
 const appConfigLoader = (appConfig: AppConfig) => {
   return () => {
@@ -16,11 +18,13 @@ const appConfigLoader = (appConfig: AppConfig) => {
 @NgModule({
   declarations: [
     AppComponent,
-    LatestNewsComponent,
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
+    ClientModule,
+    SharedModule,
     NgxWebstorageModule.forRoot(),
   ],
   providers: [

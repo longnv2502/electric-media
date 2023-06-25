@@ -12,7 +12,6 @@ import {ClientUiModule} from "./layout/client-ui/client-ui.module";
     FormsModule,
     ReactiveFormsModule,
     LayoutModule,
-    ClientUiModule,
   ],
   declarations: [
   ],
@@ -24,7 +23,6 @@ import {ClientUiModule} from "./layout/client-ui/client-ui.module";
     FormsModule,
     ReactiveFormsModule,
     LayoutModule,
-    ClientUiModule,
   ],
   schemas: []
 

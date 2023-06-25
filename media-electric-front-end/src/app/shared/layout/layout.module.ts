@@ -10,6 +10,10 @@ import {AdminUiModule} from "./admin-ui/admin-ui.module";
     CommonModule,
     AdminUiModule,
     ClientUiModule,
+  ],
+  exports: [
+    AdminUiModule,
+    ClientUiModule,
   ]
 })
 export class LayoutModule {

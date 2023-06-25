@@ -1,9 +1,13 @@
 <!--================News List Area Start =================-->
-<section class="blog_area section-padding">
+<section class="blog_area single-post-area section-padding">
   <div class="container">
     <div class="row">
-      <router-outlet></router-outlet>
-      <cli-news-side-bar></cli-news-side-bar>
+      <div class="col-lg-8 mb-5 mb-lg-0">
+        <router-outlet></router-outlet>
+      </div>
+      <div class="col-lg-4">
+        <cli-news-side-bar></cli-news-side-bar>
+      </div>
     </div>
   </div>
 </section>
