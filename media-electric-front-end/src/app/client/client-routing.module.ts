@@ -7,6 +7,9 @@ import {NewspaperComponent} from "./newspaper/newspaper.component";
 import {NewspaperListComponent} from "./newspaper/newspaper-list/newspaper-list.component";
 import {NewspaperDetailsComponent} from "./newspaper/newspaper-details/newspaper-details.component";
 import {NewspaperLatestComponent} from "./newspaper-latest/newspaper-latest.component";
+import {AuthComponent} from "./auth/auth.component";
+import {SignInComponent} from "./auth/sign-in/sign-in.component";
+import {SignUpComponent} from "./auth/sign-up/sign-up.component";
 
 const routes: Routes = [
   {
@@ -16,6 +19,21 @@ const routes: Routes = [
       {
         path: '',
         component: HomeComponent
+      },
+      {
+        path: 'auth',
+        component: AuthComponent,
+        children:
+          [
+            {
+              path: 'sign-in',
+              component: SignInComponent
+            },
+            {
+              path: 'sign-up',
+              component: SignUpComponent
+            }
+          ]
       },
       {
         path: 'newspaper',

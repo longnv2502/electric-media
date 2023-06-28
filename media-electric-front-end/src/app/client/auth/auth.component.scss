@@ -1,0 +1,42 @@
+cli-auth {
+  .checkbox input:checked + label {
+    background: url(../../../assets/client-assets/img/elements/primary-check.png) no-repeat center center/cover;
+    border: none;
+  }
+
+  a {
+    color: #ff656a;
+  }
+
+  a:hover {
+    color: #ff656a;
+    text-decoration: underline;
+  }
+
+  .primary-checkbox {
+    background: #e9ecef;
+    margin: auto 10px;
+  }
+
+  .btn.btn-primary:hover {
+    background-color: #f3f3f3;
+    border-color: #f3f3f3;
+  }
+
+
+  .btn.btn-link {
+    width: 60px;
+    min-width: unset;
+    line-height: 16px;
+    color: #ff656a;
+    background: unset;
+    padding: 24px 20px;
+    border-radius: 999px;
+    margin-right: 10px !important;
+  }
+
+  .btn.btn-link:before {
+    background: #f3f3f3 !important;
+  }
+
+}

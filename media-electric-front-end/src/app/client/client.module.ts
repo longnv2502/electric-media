@@ -21,6 +21,10 @@ import {
 import {NewspaperSidebarComponent} from "./newspaper/newspaper-sidebar/newspaper-sidebar.component";
 import {NewsRecentComponent} from "./home/news-recent/news-recent.component";
 import {ClientComponent} from "./client.component";
+import {AuthComponent} from './auth/auth.component';
+import {SignInComponent} from './auth/sign-in/sign-in.component';
+import {SignOutComponent} from './auth/sign-out/sign-out.component';
+import {SignUpComponent} from './auth/sign-up/sign-up.component';
 
 
 @NgModule({
@@ -40,7 +44,11 @@ import {ClientComponent} from "./client.component";
     NewspaperListComponent,
     NewspaperComponent,
     NewspaperYoutubeComponent,
-    NewspaperListSmallComponent
+    NewspaperListSmallComponent,
+    AuthComponent,
+    SignInComponent,
+    SignOutComponent,
+    SignUpComponent
   ],
   imports: [
     CommonModule,
