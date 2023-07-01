@@ -31,7 +31,8 @@
             ],
             "stylePreprocessorOptions": {
               "includePaths": [
-                "src/assets/client-assets/scss"
+                "src/assets/client-assets/scss",
+                "src/assets/admin-assets/scss"
               ]
             },
             "styles": [

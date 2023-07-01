@@ -1,11 +1,12 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 
 declare var $: any;
 
 @Component({
   selector: 'cli-news-youtube',
   templateUrl: './newspaper-youtube.component.html',
-  styleUrls: ['./newspaper-youtube.component.scss']
+  styleUrls: ['./newspaper-youtube.component.scss'],
+  encapsulation: ViewEncapsulation.None,
 })
 export class NewspaperYoutubeComponent implements OnInit {
   ngOnInit(): void {

@@ -1,0 +1,48 @@
+@import "global";
+
+.weekly2-news-area {
+  .weekly2-wrapper {
+    .weekly2-single {
+      margin-left: 15px;
+      margin-right: 15px;
+
+      .weekly2-img {
+        img {
+          width: 100%;
+          border-radius: 6px;
+        }
+      }
+
+      .weekly2-caption {
+        margin-top: -31px;
+
+        span {
+          color: $heading-color;
+          text-transform: uppercase;
+          font-size: 11px;
+          font-weight: 500;
+          padding: 10px 15px;
+          line-height: 1;
+          margin-bottom: 15px;
+          display: inline-block;
+        }
+
+        h4 {
+          a {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.4;
+
+            &:hover {
+              color: $theme-color;
+            }
+          }
+        }
+
+        p {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

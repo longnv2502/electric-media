@@ -1,0 +1,86 @@
+@import "global";
+
+.weekly-news-area {
+  .weekly-wrapper {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 60px;
+
+    .weekly-single {
+      position: relative;
+      // slider left and right
+      //margin-right: 0 15px;
+      margin-left: 15px;
+      margin-right: 15px;
+
+      .weekly-img {
+
+        img {
+          width: 100%;
+          border-radius: 6px;
+        }
+      }
+
+      .weekly-caption {
+
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        background: #fff;
+        padding: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin: 0 28px;
+        border-radius: 10px;
+        @include transition(.4s);
+        opacity: 0;
+        visibility: hidden;
+
+        span {
+          color: $heading-color;
+          text-transform: uppercase;
+          font-size: 11px;
+          font-weight: 500;
+          padding: 10px 15px;
+          line-height: 1;
+          margin-bottom: 15px;
+          display: inline-block;
+        }
+
+        h4 {
+          a {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.4;
+
+            &:hover {
+              color: $theme-color;
+            }
+
+            @media #{$sm}{
+              font-size: 9px;
+              line-height: 1;
+            }
+          }
+        }
+      }
+
+      // Card Hover
+      &:hover {
+        .weekly-caption {
+          bottom: 20px;
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+
+      // Active
+      &.active {
+        .weekly-caption {
+          opacity: 1;
+          visibility: visible;
+          bottom: 20px;
+        }
+      }
+    }
+  }
+}

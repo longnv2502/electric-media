@@ -6,12 +6,16 @@ import { SideBarNavComponent } from './side-bar-nav/side-bar-nav.component';
 
 
 @NgModule({
-  declarations: [
+    declarations: [
+        HeaderComponent,
+        SideBarNavComponent
+    ],
+  exports: [
     HeaderComponent,
     SideBarNavComponent
   ],
-  imports: [
-    CommonModule
-  ]
+    imports: [
+        CommonModule
+    ]
 })
 export class AdminUiModule { }
