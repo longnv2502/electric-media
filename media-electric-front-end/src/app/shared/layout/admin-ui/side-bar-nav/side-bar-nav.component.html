@@ -1,96 +1,112 @@
-<!-- partial:partials/_sidebar.html -->
-<nav class="sidebar sidebar-offcanvas" id="sidebar">
-  <ul class="nav">
-    <li class="nav-item">
-      <a class="nav-link" href="index.html">
-        <i class="mdi mdi-grid-large menu-icon"></i>
-        <span class="menu-title">Dashboard</span>
+<!-- SideBar Start -->
+<aside class="sidebar-left border-right bg-white shadow" id="leftSidebar" data-simplebar>
+  <a href="#" class="btn collapseSidebar toggle-btn d-lg-none text-muted ml-2 mt-3" data-toggle="toggle">
+    <i class="fe fe-x"><span class="sr-only"></span></i>
+  </a>
+  <nav class="vertnav navbar navbar-light">
+    <!-- nav bar -->
+    <div class="w-100 mb-4 d-flex">
+      <a class="navbar-brand mx-auto mt-2 flex-fill text-center" href="./index.html">
+        <svg version="1.1" id="logo" class="navbar-brand-img brand-sm" xmlns="http://www.w3.org/2000/svg"
+             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 120 120" xml:space="preserve">
+                <g>
+                  <polygon class="st0" points="78,105 15,105 24,87 87,87 	"/>
+                  <polygon class="st0" points="96,69 33,69 42,51 105,51 	"/>
+                  <polygon class="st0" points="78,33 15,33 24,15 87,15 	"/>
+                </g>
+              </svg>
       </a>
-    </li>
-    <li class="nav-item nav-category">UI Elements</li>
-    <li class="nav-item">
-      <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
-        <i class="menu-icon mdi mdi-floor-plan"></i>
-        <span class="menu-title">UI Elements</span>
-        <i class="menu-arrow"></i>
-      </a>
-      <div class="collapse" id="ui-basic">
-        <ul class="nav flex-column sub-menu">
-          <li class="nav-item"><a class="nav-link" href="pages/ui-features/buttons.html">Buttons</a></li>
-          <li class="nav-item"><a class="nav-link" href="pages/ui-features/dropdowns.html">Dropdowns</a></li>
-          <li class="nav-item"><a class="nav-link" href="pages/ui-features/typography.html">Typography</a></li>
+    </div>
+    <ul class="navbar-nav flex-fill w-100 mb-2">
+      <li class="nav-item dropdown">
+        <a href="#dashboard" data-toggle="collapse" aria-expanded="false" class="nav-link">
+          <i class="fe fe-home fe-16"></i>
+          <span class="ml-3 item-text">Dashboard</span><span class="sr-only">(current)</span>
+        </a>
+      </li>
+    </ul>
+    <p class="text-muted nav-heading mt-4 mb-1">
+      <span>Components</span>
+    </p>
+    <ul class="navbar-nav flex-fill w-100 mb-2">
+      <li class="nav-item dropdown">
+        <a href="#ui-elements" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle nav-link">
+          <i class="fe fe-user fe-16"></i>
+          <span class="ml-3 item-text">Users</span>
+        </a>
+        <ul class="collapse list-unstyled pl-4 w-100" id="ui-elements">
+          <li class="nav-item">
+            <a class="nav-link pl-3" href="./ui-color.html"><span class="ml-1 item-text">Overview</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link pl-3" href="./ui-typograpy.html"><span class="ml-1 item-text">Manager</span></a>
+          </li>
         </ul>
-      </div>
-    </li>
-    <li class="nav-item nav-category">Forms and Datas</li>
-    <li class="nav-item">
-      <a class="nav-link" data-bs-toggle="collapse" href="#form-elements" aria-expanded="false"
-         aria-controls="form-elements">
-        <i class="menu-icon mdi mdi-card-text-outline"></i>
-        <span class="menu-title">Form elements</span>
-        <i class="menu-arrow"></i>
-      </a>
-      <div class="collapse" id="form-elements">
-        <ul class="nav flex-column sub-menu">
-          <li class="nav-item"><a class="nav-link" href="pages/forms/basic_elements.html">Basic Elements</a></li>
+      </li>
+      <li class="nav-item w-100">
+        <a class="nav-link" href="widgets.html">
+          <i class="fe fe-layers fe-16"></i>
+          <span class="ml-3 item-text">Widgets</span>
+          <span class="badge badge-pill badge-primary">New</span>
+        </a>
+      </li>
+      <li class="nav-item dropdown">
+        <a href="#forms" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle nav-link">
+          <i class="fe fe-slack fe-16"></i>
+          <span class="ml-3 item-text">Newspaper</span>
+        </a>
+        <ul class="collapse list-unstyled pl-4 w-100" id="forms">
+          <li class="nav-item">
+            <a class="nav-link pl-3" href="./form_elements.html"><span class="ml-1 item-text">Overview</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link pl-3" href="./form_advanced.html"><span class="ml-1 item-text">Manager</span></a>
+          </li>
         </ul>
-      </div>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" data-bs-toggle="collapse" href="#charts" aria-expanded="false" aria-controls="charts">
-        <i class="menu-icon mdi mdi-chart-line"></i>
-        <span class="menu-title">Charts</span>
-        <i class="menu-arrow"></i>
-      </a>
-      <div class="collapse" id="charts">
-        <ul class="nav flex-column sub-menu">
-          <li class="nav-item"><a class="nav-link" href="pages/charts/chartjs.html">ChartJs</a></li>
+      </li>
+      <li class="nav-item dropdown">
+        <a href="#tables" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle nav-link">
+          <i class="fe fe-message-square fe-16"></i>
+          <span class="ml-3 item-text">Comments</span>
+        </a>
+        <ul class="collapse list-unstyled pl-4 w-100" id="tables">
+          <li class="nav-item">
+            <a class="nav-link pl-3" href="./table_basic.html"><span class="ml-1 item-text">Overview</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link pl-3" href="./table_advanced.html"><span class="ml-1 item-text">Manager</span></a>
+          </li>
         </ul>
-      </div>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" data-bs-toggle="collapse" href="#tables" aria-expanded="false" aria-controls="tables">
-        <i class="menu-icon mdi mdi-table"></i>
-        <span class="menu-title">Tables</span>
-        <i class="menu-arrow"></i>
-      </a>
-      <div class="collapse" id="tables">
-        <ul class="nav flex-column sub-menu">
-          <li class="nav-item"><a class="nav-link" href="pages/tables/basic-table.html">Basic table</a></li>
+      </li>
+    </ul>
+    <p class="text-muted nav-heading mt-4 mb-1">
+      <span>Apps</span>
+    </p>
+    <ul class="navbar-nav flex-fill w-100 mb-2">
+      <li class="nav-item w-100">
+        <a class="nav-link" href="calendar.html">
+          <i class="fe fe-calendar fe-16"></i>
+          <span class="ml-3 item-text">Calendar</span>
+        </a>
+      </li>
+      <li class="nav-item dropdown">
+        <a href="#fileman" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle nav-link">
+          <i class="fe fe-folder fe-16"></i>
+          <span class="ml-3 item-text">File Manager</span>
+        </a>
+        <ul class="collapse list-unstyled pl-4 w-100" id="fileman">
+          <a class="nav-link pl-3" href="./files-list.html"><span class="ml-1">Files List</span></a>
+          <a class="nav-link pl-3" href="./files-grid.html"><span class="ml-1">Files Grid</span></a>
         </ul>
-      </div>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" data-bs-toggle="collapse" href="#icons" aria-expanded="false" aria-controls="icons">
-        <i class="menu-icon mdi mdi-layers-outline"></i>
-        <span class="menu-title">Icons</span>
-        <i class="menu-arrow"></i>
-      </a>
-      <div class="collapse" id="icons">
-        <ul class="nav flex-column sub-menu">
-          <li class="nav-item"><a class="nav-link" href="pages/icons/mdi.html">Mdi icons</a></li>
-        </ul>
-      </div>
-    </li>
-    <li class="nav-item nav-category">pages</li>
-    <li class="nav-item">
-      <a class="nav-link" data-bs-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
-        <i class="menu-icon mdi mdi-account-circle-outline"></i>
-        <span class="menu-title">User Pages</span>
-        <i class="menu-arrow"></i>
-      </a>
-      <div class="collapse" id="auth">
-        <ul class="nav flex-column sub-menu">
-          <li class="nav-item"><a class="nav-link" href="pages/samples/login.html"> Login </a></li>
-        </ul>
-      </div>
-    </li>
-    <li class="nav-item nav-category">help</li>
-    <li class="nav-item">
-      <a class="nav-link" href="http://bootstrapdash.com/demo/star-admin2-free/docs/documentation.html">
-        <i class="menu-icon mdi mdi-file-document"></i>
-        <span class="menu-title">Documentation</span>
-      </a>
-    </li>
-  </ul>
-</nav>
+      </li>
+      <li class="nav-item dropdown">
+        <a href="#support" data-toggle="collapse" aria-expanded="false" class="nav-link">
+          <i class="fe fe-settings fe-16"></i>
+          <span class="ml-3 item-text">Configuration</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</aside>
+<!-- SideBar End -->
