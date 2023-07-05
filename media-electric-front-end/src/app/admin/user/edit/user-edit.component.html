@@ -53,6 +53,15 @@
                     <label class="form-check-label" for="gridCheck"> Check me out </label>
                   </div>
                 </div>
+                <div class="row mb-4">
+                  <div class="col-md-12">
+                    <h5 class="card-title">Editor</h5>
+                    <p>Pages type scale includes a range of contrasting styles that support the needs of your
+                      product and its content.</p>
+                    <!-- Create the editor container -->
+                    <ckeditor [editor]="Editor" data="<p>Hello, world!</p>"></ckeditor>
+                  </div>
+                </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
               </form>
             </div>

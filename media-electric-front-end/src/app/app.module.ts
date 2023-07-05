@@ -8,6 +8,7 @@ import {AppConfig} from "./shared";
 import {HttpClientModule} from "@angular/common/http";
 import {ClientModule} from "./client/client.module";
 import {SharedModule} from "./shared/shared.module";
+import {CKEditorModule} from "@ckeditor/ckeditor5-angular";
 
 const appConfigLoader = (appConfig: AppConfig) => {
   return () => {
@@ -25,6 +26,7 @@ const appConfigLoader = (appConfig: AppConfig) => {
     AppRoutingModule,
     ClientModule,
     SharedModule,
+    CKEditorModule,
     NgxWebstorageModule.forRoot(),
   ],
   providers: [

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
 
 @Component({
   selector: 'app-edit',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./user-edit.component.scss']
 })
 export class UserEditComponent {
-
+  title = 'angular';
+  public Editor = ClassicEditor;
 }

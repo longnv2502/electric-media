@@ -9,6 +9,7 @@ import { BlankComponent } from './blank/blank.component';
 import { BaseComponent } from './base/base.component';
 import { UserManagerComponent } from './user/manager/user-manager.component';
 import { UserEditComponent } from './user/edit/user-edit.component';
+import {CKEditorModule} from "@ckeditor/ckeditor5-angular";
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { UserEditComponent } from './user/edit/user-edit.component';
   ],
   imports: [
     CommonModule,
+    CKEditorModule,
     AdminRoutingModule,
     SharedModule
   ]
