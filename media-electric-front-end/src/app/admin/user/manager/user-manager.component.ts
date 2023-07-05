@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-manager',
+  selector: 'adm-users-manager',
   templateUrl: './user-manager.component.html',
   styleUrls: ['./user-manager.component.scss']
 })

@@ -10,6 +10,12 @@ import { BaseComponent } from './base/base.component';
 import { UserManagerComponent } from './user/manager/user-manager.component';
 import { UserEditComponent } from './user/edit/user-edit.component';
 import {CKEditorModule} from "@ckeditor/ckeditor5-angular";
+import { CommentEditComponent } from './comment/edit/comment-edit.component';
+import { CommentManagerComponent } from './comment/manager/comment-manager.component';
+import { CategoryManagerComponent } from './category/manager/category-manager.component';
+import {CategoryEditComponent} from "./category/edit/category-edit.component";
+import {NewspaperEditComponent} from "./newspaper/edit/newspaper-edit.component";
+import {NewspaperManagerComponent} from "./newspaper/manager/newspaper-manager.component";
 
 
 @NgModule({
@@ -19,7 +25,13 @@ import {CKEditorModule} from "@ckeditor/ckeditor5-angular";
     BlankComponent,
     BaseComponent,
     UserManagerComponent,
-    UserEditComponent
+    UserEditComponent,
+    CommentEditComponent,
+    CommentManagerComponent,
+    CategoryManagerComponent,
+    CategoryEditComponent,
+    NewspaperEditComponent,
+    NewspaperManagerComponent
   ],
   imports: [
     CommonModule,
