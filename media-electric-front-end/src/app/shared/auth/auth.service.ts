@@ -1,9 +1,9 @@
 import {Injectable} from "@angular/core";
 import {catchError, Observable} from "rxjs";
 import {HttpClient, HttpResponse} from "@angular/common/http";
-import {BaseService} from "../service/base.service";
+import {BaseService} from "../service/base/base.service";
 import {Router} from "@angular/router";
-import {SERVER_API_URL} from "../service/appconfig.service";
+import {SERVER_API_URL} from "../service/base/appconfig.service";
 
 @Injectable({
   providedIn: "root"

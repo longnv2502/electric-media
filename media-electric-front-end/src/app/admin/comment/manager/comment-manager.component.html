@@ -1,1 +1,130 @@
-<p style="text-align: center">manager works!</p>
+<main role="main" class="main-content">
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-12">
+        <h2 class="h3 mb-0 page-title">Comments Management</h2>
+        <div class="row align-items-center my-4">
+          <div class="col-md">
+            <ul class="nav nav-pills justify-content-start">
+              <li class="nav-item">
+                <a class="nav-link active bg-transparent pr-2 pl-0 text-primary" href="#">All <span
+                  class="badge badge-pill bg-primary text-white ml-2">164</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-muted px-2" href="#">Pending <span
+                  class="badge badge-pill bg-white border text-muted ml-2">64</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-muted px-2" href="#">Processing <span
+                  class="badge badge-pill bg-white border text-muted ml-2">48</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-muted px-2" href="#">Completed <span
+                  class="badge badge-pill bg-white border text-muted ml-2">52</span></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-auto ml-auto text-right">
+            <span class="small bg-white border py-1 px-2 rounded mr-2 d-none d-lg-inline">
+                    <a href="#" class="text-muted"><i class="fe fe-x mx-1"></i></a>
+                    <span class="text-muted">April 14, 2020 - May 13, 2020</span>
+                  </span>
+            <button type="button" class="btn" data-toggle="modal" data-target=".modal-slide"><span
+              class="fe fe-filter fe-16 text-muted"></span></button>
+            <button type="button" class="btn"><span class="fe fe-refresh-ccw fe-16 text-muted"></span></button>
+          </div>
+          <!--          <div class="col-md-6">-->
+          <!--            <div id="chart-box">-->
+          <!--              <div id="donutChartWidget"></div>-->
+          <!--            </div>-->
+          <!--          </div>-->
+          <!--          <div class="col-md-6">-->
+          <!--          </div> &lt;!&ndash; .col-md-12 &ndash;&gt;-->
+        </div> <!-- .row -->
+        <div class="row">
+          <div class="col-md-12">
+            <!-- table -->
+            <table class="table table-borderless table-striped">
+              <thead>
+              <tr>
+                <th>ID</th>
+                <th>Parent ID</th>
+                <th>Article</th>
+                <th>Content</th>
+                <th>Owner</th>
+                <th>Last Updated</th>
+                <th>Like Number</th>
+                <th>Status</th>
+                <th>Action</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td class="text-muted small">1</td>
+                <td class="text-muted small">null</td>
+                <td>siuuuuuu</td>
+                <td class="text-muted small">goalllll</td>
+                <td class="text-muted small">ronaldo</td>
+                <td class="text-muted small">Apr 30, 2020</td>
+                <td class="text-muted small">5</td>
+                <td class="text-muted small"><span class="badge badge-pill badge-success">Active</span></td>
+                <td>
+                  <button class="btn btn-sm dropdown-toggle more-horizontal" type="button" data-toggle="dropdown"
+                          aria-haspopup="true" aria-expanded="false">
+                    <span class="text-muted sr-only">Action</span>
+                  </button>
+                  <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="#">Hide</a>
+                    <a class="dropdown-item" href="#">Remove</a>
+                  </div>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+            <script>
+              $(document).ready(function () {
+                ShowAllCommentsFromArticle();
+
+                function ShowAllCommentsFromArticle() {
+                  $("table tbody").html("");
+                  $.ajax({
+                    url: "https://localhost:7090/Comment/getAllCommentsFromArticle?articleID=1",
+                    type: "get",
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    success: function (result, status, xhr) {
+                      $.each(result, function (index, value) {
+                        $("tbody").append($("<tr>"));
+                        appendElement = $("tbody tr").last();
+                        appendElement.append($("<td>").html(value["commentId"]));
+                        appendElement.append($("<td>").html(value["parentCommentId"]));
+                        appendElement.append($("<td>").html(value["fkArticleId"]));
+                        appendElement.append($("<td>").html(value["commentContent"]));
+                        appendElement.append($("<td>").html(value["fkUserId"]));
+                        appendElement.append($("<td>").html(value["updateTime"]));
+                        appendElement.append($("<td>").html(value["updateTime"]));
+                        appendElement.append($("<td>").html(value["report"]));
+                      });
+                    },
+                    error: function (xhr, status, error) {
+                      console.log(xhr);
+                    }
+                  });
+                }
+              });
+            </script>
+            <nav aria-label="Table Paging" class="my-3">
+              <ul class="pagination justify-content-end mb-0">
+                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+              </ul>
+            </nav>
+          </div> <!-- .col -->
+        </div> <!-- .row -->
+      </div> <!-- .col-12 -->
+    </div> <!-- .row -->
+  </div> <!-- .container-fluid -->
+</main>

@@ -1,9 +1,9 @@
 import {HttpClient, HttpHeaders, HttpResponse} from "@angular/common/http";
 import {LocalStorageService, SessionStorageService} from "ngx-webstorage";
 import {catchError, map, Observable, Observer, Subject, switchMap, tap} from "rxjs";
-import {SERVER_API_URL} from "../service/appconfig.service";
+import {SERVER_API_URL} from "../service/base/appconfig.service";
 import {Injectable} from "@angular/core";
-import {BaseService} from "../service/base.service";
+import {BaseService} from "../service/base/base.service";
 import {Router} from "@angular/router";
 
 

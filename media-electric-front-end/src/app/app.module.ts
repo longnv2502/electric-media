@@ -9,6 +9,7 @@ import {HttpClientModule} from "@angular/common/http";
 import {ClientModule} from "./client/client.module";
 import {SharedModule} from "./shared/shared.module";
 import {CKEditorModule} from "@ckeditor/ckeditor5-angular";
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 const appConfigLoader = (appConfig: AppConfig) => {
   return () => {
@@ -28,6 +29,7 @@ const appConfigLoader = (appConfig: AppConfig) => {
     SharedModule,
     CKEditorModule,
     NgxWebstorageModule.forRoot(),
+    NgbModule,
   ],
   providers: [
     AppConfig,
