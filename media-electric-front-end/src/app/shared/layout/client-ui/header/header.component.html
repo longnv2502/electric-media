@@ -56,10 +56,10 @@
                   <li><a routerLink="about">About</a></li>
                   <li><a routerLink="newspaper-latest">Latest News</a></li>
                   <li><a routerLink="contact">Contact</a></li>
-                  <li><a routerLink="#">Account</a>
+                  <li><a routerLink="#">LongNv</a>
                     <ul class="submenu">
-                      <li><a routerLink="auth/sign-in">Login</a></li>
-                      <li><a routerLink="auth/sign-up">Register</a></li>
+                      <li><a (click)="openLoginModal()">Login</a></li>
+                      <li><a (click)="openRegisterModal()">Register</a></li>
                     </ul>
                   </li>
                 </ul>
@@ -72,7 +72,6 @@
               <div class="search-box">
                 <form action="#">
                   <input type="text" placeholder="Search">
-
                 </form>
               </div>
             </div>

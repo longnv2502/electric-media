@@ -1,0 +1,52 @@
+<!--Form Sign-In Start-->
+<div class="card">
+  <div class="card-body py-5 px-md-5">
+    <form>
+      <!-- Email input -->
+      <div class="form-outline mb-4">
+        <input type="text" placeholder="Username" class="form-control"/>
+      </div>
+
+      <!-- Password input -->
+      <div class="form-outline mb-4">
+        <input type="password" placeholder="Password" class="form-control"/>
+      </div>
+
+      <!-- Checkbox -->
+      <div class="form-check d-flex align-items-center justify-content-center mb-4 checkbox">
+        <label class="primary-checkbox mr-2" for="subscribe">
+          <input class="me-2 d-none" type="checkbox" value="" id="subscribe" checked/>
+          <label class="form-check-label" for="subscribe"></label>
+        </label>
+        <label for="subscribe">Subscribe to our newsletter</label>
+      </div>
+      <p class="text-center">Don't have an account? <a routerLink="../sign-up">Register here</a></p>
+
+      <!-- Submit button -->
+      <button type="submit" class="btn btn-primary btn-block mb-4">
+        Sign up
+      </button>
+
+      <!-- Register buttons -->
+      <div class="text-center">
+        <p>or sign up with:</p>
+        <button type="button" class="btn btn-link btn-floating mx-1">
+          <i class="fab fa-facebook-f"></i>
+        </button>
+
+        <button type="button" class="btn btn-link btn-floating mx-1">
+          <i class="fab fa-google"></i>
+        </button>
+
+        <button type="button" class="btn btn-link btn-floating mx-1">
+          <i class="fab fa-twitter"></i>
+        </button>
+
+        <button type="button" class="btn btn-link btn-floating mx-1">
+          <i class="fab fa-github"></i>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+<!--Form Sign-In End-->

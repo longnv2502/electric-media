@@ -53,7 +53,7 @@ import {SignUpComponent} from './auth/sign-up/sign-up.component';
   imports: [
     CommonModule,
     ClientRoutingModule,
-    SharedModule
+    SharedModule,
   ]
 })
 export class ClientModule {
